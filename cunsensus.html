@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CunsensUs</title>
+    <link rel="stylesheet" href="cunsensus.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/jpg" href="images/consensus.jpg">
+</head>
+<body>    
+    <div class="container">
+        <h1>CunsensUs</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="wygomp.html" target="_blank" title="link to WYGOMP⛽">WYGOMP</a></li>
+                <li><a href="p-receipt.html" target="_blank" title="link to P-Receipt🧾">P-Receipt</a></li>
+                <li><a href="whenfive.html" target="_blank" title="link to When5🎲">When5</a></li>
+            <ul>
+        </nav>
+    <main>  
+        <article><span style="color: brown;">S</span>ometimes there are<br> more than one option or<br>solution to choose.<br> <span style="color: aliceblue;">Al</span>so, sometimes, there<br> are a few people or a<br> conference room o<span style="color: aliceblue;">f</span><br> p<span style="color: brown;">eo</span>ple needing to agre<span style="color: brown;">e</span><br> on <sup>solutions<span style="color: aliceblue;">.</span></sup><br><b>Well, thats wh<span style="color: aliceblue;">ere</span><br><span style="color: rgb(29, 96, 184);">CunsensUs</span> comes <span style="color: aliceblue;">in.</span></b><br>You can now <span style="color: aliceblue;">make</span> a<br><span style="color: brown;">d</span>ecisio<span style="color:rgb(29, 96, 184);">n</span> <span style="color: brown;">by the</span> <span style="color: aliceblue;">use of<br>voting & multi-voting.
+        </article>
+    </main>  
+        <p>Use <b>CunsensUs</b> to <b>VOTE</b> on <b>OPTIONS</b>.<br>Vote for 1 solution or the amount you need.</p>
+        <hr>
+        <form id="votingForm">
+            <label for="options"><b>Enter Options:</b><br>(use commas)</label>
+            <textarea type="text" id="options" name="options" required></textarea>
+            <br>
+            <label for="numVoters"><b>How many Voters ? :</b></label>
+            <input type="number" id="numVoters" name="numVoters" min="1" required>
+            <br>
+            <label for="votesPerVoter"><b>How many votes each ? :</b></label>
+            <input type="number" id="votesPerVoter" name="votesPerVoter" min="1" required>
+            <br>
+            <label for="preferredOptions"><b>How many options need to be chosen ? :</b></label>
+            <input type="number" id="preferredOptions" name="preferredOptions" min="1" required>
+            <br>
+            <label for="voterSelections"><b>Enter Voters' selections:</b><br><i>(use commas &<br>start a new line↩️ for each Voter)</i></label>
+            <textarea id="voterSelections" name="voterSelections" required></textarea>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="results"></div>
+    </div>
+    <div><footer style="color: rgb(6, 138, 138);">
+        &copy; 2025 CunsensUs by Intellifly <a style="color:blue" href="https://mailto:techniquecole7@gmail.com" target="_blank ">contact</a>
+    </footer>
+    </div>
+    <script src="cunsensus.js">
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function(error) {
+                    console.log('ServiceWorker registration failed: ', error);
+                });
+            });
+        }
+    </script>
+</body>
+</html>

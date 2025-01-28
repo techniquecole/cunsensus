@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta X-UA-Compatible content="ie=edge">
+    <meta name="description" content="P-receipt is a free utility used to allow people to see the exact cost of their purchase before the transaction.">
+    <meta name="keywords" content="obligation, desperate, cost, expense, money, budget, sufficiency, thrifty, awareness">
+    <meta name="author" content="Intellifly & GitHub Co-pilot">
+    <link rel="icon" type="image/png" href="images/priceyfav.png">
+    <link rel="stylesheet" href="p-receipt.css">
+    <link rel="manifest" href="manifest.json">
+    <title>P-Receipt</title>
+    <span><a href="https://google.com/maps" target="_blank"  style="margin-left: 5px; font-size: 1.2em; color:blue">Google Maps</a></span>
+    <span><a href="wygomp.html" target="_blank"  style="margin-left: 5px;font-size:1.2em; color:blue">WYGOMP</a></span>
+    <span><a href="https://www.rakuten.com" target="_blank" style="margin-left: 5px; font-size: 1.2em; color:blue">Rakuten coupons</a></span>
+    <span><a href="cunsensus.html" target="_blank" style="margin-left: 5px; font-size: 1.2em; color:blue">CunsensUs</a></span>
+    <span><a href="https://urls.grow.me/rb2xoN7Ne" target="_blank" style="margin-left: 5px; font-size: 1.2em; color:blue">Budget Recipes</a></span>
+    <span><a href="whenfive.html" target="_blank" style="margin-left: 5px; font-size: 1.2em; color:blue">When5</a></span>
+    <a href="wygomp.html" target="_blank">
+        <img src="images/wygofav.jpg" id="img2" title="link to WYGOMP" height="20px"></a>
+        <img src="images/img3.avif" id="img3">
+    <style>    
+        html, body {
+            height: 255%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            background-attachment: scroll;
+            background-position: bottom;
+        }
+        body {
+            background-color: beige;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: bottom ; 
+            
+            
+            
+        }
+        .content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        input[type="text"] {
+            border: .2px solid black;
+            padding: 7px;
+        }
+        label {
+            font-size: 35px;
+            position: relative;
+            
+        }
+        .results-container {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .raised-image {
+            float: right;
+            width: 500px;
+            height: auto;
+            margin-top: -5px;
+        }
+        footer {
+            background-color: rgba(104, 60, 60, 0.966);
+            height: auto;
+            text-align: center;
+            padding: -25px;
+        }
+        
+    </style>
+</head>       
+<body>
+    <div class="content">
+        <img src="images/store.jpeg" id="img4" position="top" width="1349px">    
+        <img id="img1" src="images/receipt.jpg" width="90">
+        <h1><p id="slogan" style="color: rgb(6, 73, 6);"><b>"P-Receipt ha$ Got It FIGURED"<b></p></h1>    
+        <form onsubmit="calculateTotalTransaction(); return false;">
+        <h3>~By applying Tax % and Prices of your items in the areas below P-RECEIPT can show your subtotal & Total with Tax included.~</h3>
+    
+    <br>
+    <br>
+            <label for="salestax"><small><i>SalesTax </i>(%) <small>does not require decimal:</small></label>
+            <input type="text" id="sales_tax" name="sales_tax">
+            <br><br>
+            <label for="item1">Item Price:</label>
+            <input type="text" id="item1" name="item1">
+            <br><br>
+            <label for="item2">Item Price:</label>
+            <input type="text" id="item2" name="item2">
+            <br><br>
+            <label for="item3">Item Price:</label>
+            <input type="text" id="item3" name="item3">
+            <br><br>
+            <label for="item4">Item Price:</label>
+            <input type="text" id="item4" name="item4">
+            <br><br>
+            <label for="item5">Item Price:</label>
+            <input type="text" id="item5" name="item5">
+            <br><br>
+            <label for="item6">Item Price:</label>
+            <input type="text" id="item6" name="item6">
+            <br><br>
+            <label for="item7" style="color: bisque">Item Price:</label>
+            <input type="text" id="item7" name="item7">
+            <br><br>
+            <label for="item8" style="color: bisque">Item Price:</label>
+            <input type="text" id="item8" name="item8">
+            <br><br>
+            <label for="item9" style="color: bisque">Item Price:</label>
+            <input type="text" id="item9" name="item9">
+            <br><br>
+            <label for="item10" style="color: bisque;">Item Price:</label>
+            <input type="text" id="item10" name="item10">
+    
+            <br><br>
+            <input type="submit" value="Calculate" style="background-color: hsla(120, 25%, 65%, 0.692); border-radius: 15px; font-size: .9em; padding: 20px 10px; width: 110px;">
+        </form>
+        <div class="results-container" style="font-size: 50px;;font-size: 3em; color: rgb(65, 137, 179);">
+            <h2><mark style="background-color: rgba(128, 128, 128, 0.418); border-radius: 35px;">Results:</h2>
+            <p id="total_transaction"></p>
+            <p id="sub_total"></p>    
+        </div>
+    </div>
+    <footer>
+        &copy; 2025 P-Receipt by Intellifly <a style="color:blue" href="https://mailto:techniquecole7@gmail.com" target="_blank ">contact</a>
+    </footer> 
+    <script src="p-receipt.js">
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function(error) {
+                    console.log('ServiceWorker registration failed: ', error);
+                });
+            });
+        }
+    </script>
+</body>
+</html>

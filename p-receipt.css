@@ -1,0 +1,86 @@
+@font-face {
+        src: url(fonts/doto.ttf);
+        font-family: doto;
+}
+@font-face {
+    src: url(fonts/munyon.ttf);
+    font-family: munyon;
+}
+h3{
+    font-family: munyon;
+    position: relative;
+    color: rgb(2, 56, 2);
+    text-align: center;
+}
+#slogan{
+    text-shadow: 2px 5px 5px;
+    font-family:doto;
+    border-style: dotted;
+    border-color: rgb(172, 12, 12);
+    border-radius:8px;
+    border-width: 4px;
+}
+@keyframes glow {
+    50%{border:rgb(172, 12, 12)}
+}
+body{
+    background-image: url(images/register.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 105%;
+    height:5px;
+}
+#img1{
+    width: 200px;
+    height:240px;
+    border: 6px dashed;
+    animation-name: slideUp;;
+    animation-duration: 1.5s;
+}    
+@keyframes slideUp{
+    from{transform: translateY(450px)}
+}
+
+#sales_tax{
+    width:18px;
+    background-color: hsla(120, 25%, 65%, 0.692);
+}
+input{
+    background-color: hsla(120, 25%, 65%, 0.692);
+    position:absolute;
+    animation-name: glow;
+    animation-duration: 7s;
+    box-shadow: 0px 10px 200px;
+}
+@keyframes glow {
+    30%{background-color:rgba(11, 170, 11, 0.527);}
+}
+
+#img2{
+    position: absolute;
+    right: 3.5%;
+    height: 40%;
+    top: 94.1%;
+    width:40%;
+}
+#img3{
+    height:10%;
+    position: absolute;
+    height: 40%;
+    left: 3.5%;
+    top: 94.1%;
+    width:50%;
+}
+#img4{
+    background-repeat: no-repeat;
+    position: auto;
+    height: 710px;
+    margin-bottom:-570px;
+    margin-top: -23%;
+}
+span{
+    font-size: 1em;
+    position: relative;
+}

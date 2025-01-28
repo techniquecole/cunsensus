@@ -1,0 +1,134 @@
+body {
+    font-family: munyon;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+    margin:0;
+    background-image: url(images/high52.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    
+    
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1;
+}
+
+nav ul li {
+    margin-bottom: 20px;
+}
+nav ul li a:hover{
+    color:red;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.363);
+    padding: 5px 10px;
+    border-radius: 5px;
+    
+}
+header{
+    position:absolute;
+    margin-left: -229px;
+    margin-top: 200px;
+    transform: translateX(-50%);
+    top: 0;
+    left: 50%;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+}
+@media (max-width: 768px) {
+    header {
+        font-size: 13px;
+        padding: 4px;
+    }
+}    
+#img3{
+    height: 80px;
+    margin-right: 980px;
+    margin-top: 400px;
+    margin-left: -245px;
+    animation-name: rotate;
+    animation-timing-function:steps(10);
+    animation-duration: 4s;
+}
+#img4{
+    position: absolute;
+    margin-top: -370px;
+    margin-left: 70px;
+    height:85px;
+    width:175px;
+    animation-name: slideRight, grow;
+    animation-duration: 8s;
+    animation-direction: alternate;
+}
+@keyframes opacity{
+    100%{opacity:0}
+}
+@keyframes slideRight{
+    from{transform: translateX(100px)}
+}
+@keyframes rotate{
+    50%{transform: rotateZ(720deg)}
+}
+@font-face{
+    font-family: munyon;
+    src: url(fonts/munyon.ttf)
+}
+@keyframes grow{
+    30%{transform: scale(1.1,1.1)}
+}
+.container {
+    text-align: center;
+    background-color: rgba(9, 119, 37, 0.5);
+    padding: 20px;
+    border-style: double;
+    border-width: 10px;
+    border-radius: 10px;
+    position:absolute;
+}
+
+button {
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    background-color: rgb(41, 99, 153);
+}
+button:active{
+    background-color: rgb(127, 255, 133);
+}
+button:hover{
+    border-color: wheat;
+}
+#resultDisplay {
+    margin-top: -10px;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    position: absolute;
+    bottom: 0;
+    height: 40px;
+    
+}

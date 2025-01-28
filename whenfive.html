@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>high5</title>
+    <link rel="stylesheet" href="whenfive.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="images/jpg" href="images/high53.jpg">
+</head>
+<div><img id="img3"src="images/high53.jpg"></div>
+<div><img id="img4"src="images/high54.jpg"></div>
+<body>
+    <nav>
+        <ul>
+            <li><a href="wygomp.html" target="_blank">WYGOMP</a></li>
+            <li><a href="p-receipt.html" target="_blank">P-Receipt</a></li>
+            <li><a href="cunsensus.html" target="_blank">CunsensUs</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div>
+        <h1><b>"Roll The Die<br> Until<br> You Roll A 5"</b></h1>
+        </div>
+    </header>
+    
+    <div class="container">
+        <h1>WHEN<sup>5</sup></h1>
+        <button id="rollButton">Roll the Die</button>
+        <div id="resultDisplay">You Rolled a: </div>
+    </div>
+    <script src="whenfive.js">
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function(error) {
+                    console.log('ServiceWorker registration failed: ', error);
+                });
+            });
+        }
+    </script>
+</body>
+   
+</html>
+    <footer>
+        <hr>
+        2025 WHEN<sup style="color: red;">5</sup> by Intellify &copy; <a href="https://mailto:techniquecole7@gmail.com" target="_blank" style="color: rgb(73, 73, 136);">Contact: Gmail</a>
+    </footer>

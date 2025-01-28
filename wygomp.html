@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta X-UA-Compatible content="ie=edge">
+    <meta name="Description" content="WYGOMP(What You Got On) my petro is a free utility used to prepare owners and/or carpoolers of necessary fuel expenses">
+    <meta name="keywords" content="fuel, gas, carpool, trip, travel, miles, obligation, gallon, cost, expense, money, budget, fuel efficiency, price per gallon"> 
+    <meta name="author" content="Intellifly & GitHub Co-pilot">
+    <link rel="icon" type="image/png" href="images/wygo.png">
+    <link rel="manifest" href="manifest.json">
+    <title>WYGOMP</title>
+    <style>
+        html, body {
+            height: 25%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;   
+        }
+        body {
+            background-color: slategrey;
+            flex: 1;
+        }
+        .content {
+            flex: 1;
+        }
+        input[type="text"] {
+            border: .02px solid black;
+            padding: 7px;
+        }
+        label {
+            font-size: 35px;
+        }
+        .results-container {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 45px;
+            font-weight: 2em;    
+        }
+        .button:hover{
+            animation-name: glow;
+            animation-duration: 5s;
+        }
+        @keyframes glow{
+            50%{background-color: rgb(3, 154, 241);}
+        }
+        .raised-image {
+            float: right;
+            width: 600px;
+            height: 600px;
+            margin-top: -61px;
+        }
+        #header{
+            text-align: center;
+        }
+        .iframe-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            z-index: 1;
+        }
+        footer {
+            background-color: rgba(2, 119, 27, 0.966);
+            height: 52px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h3><p>It is completely <mark style="background-color:hwb(59 0% 0% / 0.671)">FREE</mark> to utilize <mark style="background-color:hwb(59 0% 0% / 0.671)">WYGOMP</mark>. Have <mark style="background-color:hwb(59 0% 0% / 0.671)">FUN,</mark> Please <mark style="background-color:hwb(59 0% 0% / 0.671)">DRIVE</mark> safe. <mark style="background-color:hwb(59 0% 0% / 0.671)">FOCUS</mark>, remaining <mark style="background-color:hwb(59 0% 0% / 0.671)">DEFENSIVE</mark>; street <mark style="background-color:hwb(59 0% 0% / 0.671)">SIGNS</mark> and road <mark style="background-color:hwb(59 0% 0% / 0.671)">RULES</mark> are <mark style="background-color:hwb(59 0% 0% / 0.671)">YOUR</mark> best <mark style="background-color:hwb(59 0% 0% / 0.671)">FRIEND</mark>.</p></h3>
+        <div style="position: relative;">
+            <iframe id="vivagoIframe" scrolling="no" src="https://vivago.ai/home" width="100%" height="185" style="border: 0;"></iframe>
+            <div class="iframe-overlay"></div>
+        </div>
+        <p style="text-align: center; margin-top: 0; color: yellowgreen;"><sup>The Vivago.ai promotion above⬆️ is NOT a link.</sup></p>
+        <h1 id="header" style="background-color: rgba(2, 119, 27, 0.966); height: auto;">WYGO My Petro<span style="color: yellow">!</span></h1>
+        <hr>
+        <a style="color: rgb(3, 57, 235);" href="https://maps.google.com" target= blank title="Discover how many miles you are traveling">Google Maps</a>
+        <br>
+        <br>
+        <a style="color: rgb(3, 57, 235);" href="https://www.fueleconomy.gov/feg/findacar.shtml" target= blank title="See your car's miles per gallon ">Your MPG</a>
+        <br>
+        
+        <a href="https://www.vivago.ai/home" target="_blank" title="Link to Vivago">
+        <img src="images/bmwjupiter.png" class="raised-image" alt="A white BMW in outer space with Jupiter in the backgroung">
+        </a>
+        
+        <br>
+        <a style="color: rgb(3, 57, 235);" href="https://gasprices.aaa.com/state-gas-price-averages/" target="_blank" title="Shows current fuel prices by state">Current Fuel Prices</a>
+        <br>
+        <hr>
+        <a  style="color: rgb(21, 18, 204)"; href="p-receipt.html" target="_blank">P-Receipt</a><br>
+        <a  style="color: rgb(21, 18, 204)"; href="whenfive.html" target="_blank">When5</a><br>
+        <a  style="color: rgb(21, 18, 204)"; href="cunsensus.html" target="_blank">CunsensUs</a><br>
+        <hr>
+        <a href="https://www.udio.com" target="_blank"> 
+            <img src="images/udio2.png" title="Link to Udio" alt="A white BMW parked in outer space with Jupiter as the back drop."></a>
+            <video controls autoplay src="videos/awtumn.mp4" title="Enlarge for best results. Designed in Vivago" width="304" alt="A sombering distant view of a vast orange and amber landscape on an Autumn morning.">
+                <source="awtumn.WebM">
+
+            </video>
+            <a href="https://www.vivago.ai/home" target="_blank" title="Link to Vivago">
+            <img id="pic" src="images/wygo.png" height="290" width= "605">
+            </a>
+        <hr>
+        <h2><p style="color:rgb(12, 26, 14);"><b>Discover the <span style="color:darkgreen"><u><i>Total Fuel Cost</i></u></span> and number of gallons needed with WYGO.</b></p></h2>
+        <form onsubmit="calculateTripCost(); return false;">
+            <br>
+            <br>
+            <label for="distance"><b>Distance</b> <i>(in miles)</i>:</label>
+            <input style="background-color: rgba(255, 255, 0, 0.521)" type="text" name="distance" value="" id="distance">
+            <br>
+            <br>
+            <label for="fuel_efficiency"><b>Fuel Efficiency</b> <i>(mpg)</i>:</label>
+            <input style="background-color: rgba(255, 255, 0, 0.521)" type="text" name="fuel_efficiency"  value="" id="fuel_efficiency">
+            <br>
+            <br>
+           
+            <label for="price_per_gallon"><b>Price per Gallon</b>:</label>
+            <input style="background-color: rgba(255, 255, 0, 0.521)" type="text" name="price_per_gallon" value="" id="price_per_gallon">
+            <br>
+            <input class="button" style="background-color: rgba(73, 52, 189, 0.774); border-radius: 5px; font-size: 1em; padding: 8px 10px; width: 100px;" type="submit" value="Calculate">
+        </form>
+        <br>
+        <br>
+        
+        <div class="results-container">
+            <h2>Results:</h2>
+            <p id="gallons_needed"></p>
+            <p id="total_cost"></p>
+        
+            <br>
+        
+               
+        </div>
+       
+        <br>
+            
+        <br>    
+    <footer>    
+        <p style="color: yellow;">&copy; 2025 WYGOMP by Intellifly</p>
+        <a href="https://mailto:techniquecole7@gmail.com" style="color:rgba(0, 0, 255, 0.76);" target=_blank title="Contact me through this Email">Contact</a>   
+    </footer>   
+    <script src="wygomp.js">
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function(error) {
+                    console.log('ServiceWorker registration failed: ', error);
+                });
+            });
+        }
+    </script>
+    
+</body>
+
+</html>

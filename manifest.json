@@ -1,0 +1,24 @@
+{
+    "name": "P-Receipt",
+    "short_name": "P-Receipt",
+    "description": "A utility to manage cost of expenses",
+    "start_url": "p-receipt.html",
+    "display": "standalone",
+    "background_color": "beige",
+    "theme_color": "#000000",
+    "scope": "/",
+    "icons": [
+      {
+        "src": "images/priceyfav.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "images/priceyfav.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
+
+  
