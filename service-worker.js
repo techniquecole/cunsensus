@@ -1,26 +1,20 @@
-const CACHE_NAME_V1 = 'p-receipt-cache-v1';
+const CACHE_NAME_V1 = 'cunsensus-cache-v1';
 const CACHE_NAME_V2 = 'whenfive-cache-v2';
-const CACHE_NAME_V3 = 'cunsensus-cache-v3';
+const CACHE_NAME_V3 = 'p-receipt-cache-v3';
 const CACHE_NAME_V4 = 'wygomp-cache-v4';
 
 const urlsToCacheV1 = [
   '/',
-  '/p-receipt.html',
-  '/p-receipt.css',
-  '/p-receipt.js',
-  '/images/priceyfav.png',
-  '/images/img3.avif',
-  '/images/wygofav.jpg',
-  '/font/doto.ttf',
-  '/font/munyon',
-  '/wygomp.html',
-  '/whenfive.html',
-  'https://urls.grow.me/rb2xoN7Ne',
   '/cunsensus.html',
-  'https://www.rakuten.com',
-  'https://google.com/maps',
-  '/images/store.jpeg',
-  '/images/receipt.jpg',
+  '/cunsensus.ccs',
+  '/cunsensus.js',
+  '/images/consensus.jpg',
+  '/images/consensus2.webp',
+  '/wygomp.html',
+  '/p-receipt.html',
+  '/whenfive.html',
+  '/fonts/Unna-Regular.ttf',
+  '/fonts/Unna-Bold.ttf',
   'mailto:techniquecole7@gmail.com',
 ];
 
@@ -39,16 +33,22 @@ const urlsToCacheV2 = [
 ];
 
 const urlsToCacheV3 = [
-  '/cunsensus.html',
-  '/cunsensus.ccs',
-  '/cunsensus.js',
-  '/images/consensus.jpg',
-  '/images/consensus2.webp',
-  '/wygomp.html',
   '/p-receipt.html',
+  '/p-receipt.css',
+  '/p-receipt.js',
+  '/images/priceyfav.png',
+  '/images/img3.avif',
+  '/images/wygofav.jpg',
+  '/font/doto.ttf',
+  '/font/munyon',
+  '/wygomp.html',
   '/whenfive.html',
-  '/fonts/Unna-Regular.ttf',
-  '/fonts/Unna-Bold.ttf',
+  'https://urls.grow.me/rb2xoN7Ne',
+  '/cunsensus.html',
+  'https://www.rakuten.com',
+  'https://google.com/maps',
+  '/images/store.jpeg',
+  '/images/receipt.jpg',
   'mailto:techniquecole7@gmail.com',
 ];
 
