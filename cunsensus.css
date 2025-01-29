@@ -88,10 +88,11 @@ button:hover {
     border: solid #0056b3;
 }
 footer{
-    margin-top: 8%;
-    margin-left: 34.5%;
+    margin-top: 70%;
+    margin-left: -25%;
     float: right;
     position: absolute;
+    white-space: nowrap;
 }
 footer a:hover{
     font-weight: bolder;
