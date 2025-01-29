@@ -9,7 +9,7 @@
 h3{
     font-family: munyon;
     position: relative;
-    color: rgb(2, 56, 2);
+    color: rgb(13, 133, 13);
     text-align: center;
 }
 #slogan{
@@ -38,6 +38,7 @@ body{
     border: 6px dashed;
     animation-name: slideUp;;
     animation-duration: 1.5s;
+    overflow: auto;
 }    
 @keyframes slideUp{
     from{transform: translateY(450px)}
