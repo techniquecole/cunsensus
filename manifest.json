@@ -1,6 +1,6 @@
 {
-    "name": "CunsensUs",
-    "short_name": "CunsensUs",
+    "name": "cunsensus",
+    "short_name": "cunsensus",
     "description": "A utility to simplify different scenarios of multivoting.",
     "start_url": "cunsensus.html",
     "display": "standalone",
