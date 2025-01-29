@@ -53,14 +53,15 @@ label {
     margin-top: 10px;
 }
 article{
-    float: right;
+    float: inline-start;
     position: absolute;
-    margin-left: -52%;
-    margin-top: -54%;
+    margin-left: -20%;
+    margin-top: -59%;
     font-family: Unna-Bold;
     font-size: 1em;
-    
-    text-align: right;
+}
+.horizontal-text {
+    white-space: nowrap;
 }
 input {
     padding: 8px;
