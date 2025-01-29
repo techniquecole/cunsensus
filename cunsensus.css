@@ -1,11 +1,11 @@
 body {
     font-family: Unna-Regular;
     background-image: url(images/consensus2.webp);
-    background-size: 50%;
+    background-size: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 120vh;
+    height: 130vh;
     margin: 0;
 }
 .navbar ul{
@@ -53,11 +53,12 @@ label {
     margin-top: 10px;
 }
 article{
+    float: inline-start;
     position: absolute;
-    margin-left: -10%;
+    margin-left: -20%;
     margin-top: -62%;
     font-family: Unna-Regular;
-    font-size: .9em;
+    font-size: 1em;
 }
 .horizontal-text {
     white-space: nowrap;
@@ -88,8 +89,8 @@ button:hover {
     border: solid #0056b3;
 }
 footer{
-    margin-top: 63%;
-    margin-left: -30%;
+    margin-top: 110%;
+    margin-left: -24%;
     float: right;
     position: absolute;
     white-space: nowrap;
