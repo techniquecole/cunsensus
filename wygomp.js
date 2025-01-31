@@ -9,8 +9,8 @@ function calculateTripCost() {
     }
 
     var gallonsNeeded = distance / fuelEfficiency;
-    var totalCost = gallonsNeeded * pricePerGallon;
+    var totalCost = gallonsNeeded * pricePerGallon * 2;
 
     document.getElementById('gallons_needed').innerText = gallonsNeeded.toFixed(2) + " gallons";
-    document.getElementById('total_cost').innerText = "$" + totalCost.toFixed(2);
+    document.getElementById('total_cost').innerText = "$" + totalCost.toFixed(2) + " round trip";
 }
