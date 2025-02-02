@@ -44,10 +44,6 @@ body{
     from{transform: translateY(450px)}
 }
 
-#sales_tax{
-    width:170px;
-    background-color: hsla(120, 25%, 65%, 0.692);
-}
 input{
     background-color: hsla(120, 25%, 65%, 0.692);
     position:absolute;
