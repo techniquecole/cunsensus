@@ -31,11 +31,22 @@
         label {
             font-size: 35px;
         }
+        .install-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-left: 40%;
+
+        }
         .results-container {
             text-align: center;
             margin-top: 20px;
             font-size: 45px;
-            font-weight: 2em;    
+            font-weight: 2em;
+            overflow: auto;    
         }
         .button:hover{
             animation-name: glow;
@@ -61,6 +72,8 @@
             height: 100%;
             background: transparent;
             z-index: 1;
+        
+            
         }
         footer {
             background-color: rgba(2, 119, 27, 0.966);
@@ -84,7 +97,9 @@
         <br>
         <a style="color: rgb(3, 57, 235);" href="https://www.fueleconomy.gov/feg/findacar.shtml" target= blank title="See your car's miles per gallon ">Your MPG</a>
         <br>
-        
+        <a href="https://play.google.com/store/apps/details?id=com.wygomp" target="_blank" class="install-button">
+            Install WYGOMP App
+        </a>
         <a href="https://www.vivago.ai/home" target="_blank" title="Link to Vivago">
         <img src="images/bmwjupiter.png" class="raised-image" alt="A white BMW in outer space with Jupiter in the backgroung">
         </a>
@@ -100,7 +115,7 @@
         <a href="https://www.udio.com" target="_blank"> 
             <img src="images/udio2.png" title="Link to Udio" alt="A white BMW parked in outer space with Jupiter as the back drop."></a>
             <video controls autoplay src="videos/awtumn.mp4" title="Enlarge for best results. Designed in Vivago" width="304" alt="A sombering distant view of a vast orange and amber landscape on an Autumn morning.">
-                <source="awtumn.WebM">
+                
 
             </video>
             <a href="https://www.vivago.ai/home" target="_blank" title="Link to Vivago">
@@ -156,7 +171,7 @@
             });
         }
     </script>
-    
+    </div>
 </body>
 
 </html>
